@@ -11,7 +11,7 @@ public:
 
     //deklarasi prosedur setID() dan printAII()
     void setID();
-    void printAII();
+    void printAll();
 
     //pembuatan consructor MAhasiswa dengan parameter pnama
     Mahasiswa(string pnama) :nama (pnama){
@@ -26,3 +26,20 @@ int Mahasiswa::nim = 10;
 void Mahasiswa::setID() {
     id = ++nim;
 };
+
+void Mahasiswa::printAll() {
+
+    cout << "ID : " << id << endl;
+    cout << "Nama : " << nama << endl;
+    cout << endl;
+};
+
+int main() {
+    //membuat object dan memberi nilai
+    Mahasiswa mhs1("Lia Kurnia");
+    Mahasiswa mhs2("Asroni");
+    Mahasiswa mhs3("Andi Kurniawan");
+    Mahasiswa mhs4("Joko Purbo");
+
+    
+}
