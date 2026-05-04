@@ -9,4 +9,12 @@ public:
     int id;
     string nama;
 
+    //deklarasi prosedur setID() dan printAII()
+    void setID();
+    void printAII();
+
+    //pembuatan consructor MAhasiswa dengan parameter pnama
+    Mahasiswa(string pnama) :nama (pnama){
+        setID();
+    }
 };
